@@ -28,7 +28,7 @@ import { IconLink } from "@arco-design/web-vue/es/icon";
 
 const senderValue = ref("");
 const senderLoading = ref(false);
-const senderRef = ref();
+const senderRef = ref<InstanceType<typeof Sender> | null>(null);
 
 function onSubmit() {
   // 业务处理
